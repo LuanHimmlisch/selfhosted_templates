@@ -4216,5 +4216,47 @@
         "default": "postgres"
       }
     ]
+  },
+  {
+    "title": "Grav",
+    "name": "grav",
+    "image": "linuxserver/grav:latest",
+    "description": "Grav is a modern open source flat-file CMS. Stellar performance, powerful content filtering, dynamic content types and easy theme customization.",
+    "categories": [
+      "CMS"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80:80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/grav"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "default": "1000",
+        "label": "User ID",
+        "description": "Set a custom User ID to solve permissions issues. Default 1000 for dockeruser"
+      },
+      {
+        "name": "PGID",
+        "default": "1000",
+        "label": "Group ID",
+        "description": "Set a custom Group ID to solve permissions issues. Default 1000 for dockergroup"
+      },
+      {
+        "name": "TZ",
+        "default": "America/New_York",
+        "label": "Timezone",
+        "description": "Timezone for the server"
+      }
+    ],
+    "logo": "https://avatars.githubusercontent.com/u/8237355?s=200&v=4",
+    "type": 1
   }
 ]
