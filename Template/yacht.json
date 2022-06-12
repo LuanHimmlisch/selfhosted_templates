@@ -4302,13 +4302,13 @@
       "env": [
         {
           "name": "PUID",
-          "default": "1000",
+          "default": "!PUID",
           "label": "User ID",
           "description": "Set a custom User ID to solve permissions issues. Default 1000 for dockeruser"
         },
         {
           "name": "PGID",
-          "default": "1000",
+          "default": "!PGID",
           "label": "Group ID",
           "description": "Set a custom Group ID to solve permissions issues. Default 1000 for dockergroup"
         },
