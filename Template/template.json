@@ -4258,5 +4258,29 @@
     ],
     "logo": "https://avatars.githubusercontent.com/u/8237355?s=200&v=4",
     "type": 1
+  },
+  {
+    "title": "Apache PHP",
+    "name": "apache-php",
+    "image": "php:8.1-apache",
+    "description": "PHP is a server-side scripting language designed for web development. PHP can be added to straight HTML or it can be used with a variety of templating engines and web frameworks.",
+    "categories": [
+      "Web",
+      "Development",
+      "Server"
+    ],
+    "platform": "linux",
+    "restart_policy": "on-failure",
+    "ports": [
+      "8080:80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/var/www/html",
+        "bind": ""
+      }
+    ],
+    "logo": "https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/php/logo.png",
+    "type": 1
   }
 ]
