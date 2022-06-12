@@ -4350,9 +4350,8 @@
       ],
       "env": [],
       "command": [
-        "a2enmod rewrite",
-        "a2enmod headers",
-        "service apache2 restart"
+        "cp /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/",
+        "cp /etc/apache2/mods-available/headers.load /etc/apache2/mods-enabled/"
       ],
       "devices": [],
       "labels": [],
