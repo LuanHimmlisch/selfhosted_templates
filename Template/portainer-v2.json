@@ -4059,7 +4059,7 @@
 			"volumes": [
 				{
 					"container": "/config",
-					"bind": "/grav"
+					"bind": ""
 				}
 			],
 			"env": [
