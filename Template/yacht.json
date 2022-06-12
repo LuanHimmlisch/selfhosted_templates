@@ -4296,7 +4296,7 @@
       "volumes": [
         {
           "container": "/config",
-          "bind": "!config"
+          "bind": "!config/grav"
         }
       ],
       "env": [
